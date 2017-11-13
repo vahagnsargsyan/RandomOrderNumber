@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Yota_RandomOrderNumber>
+      <version>0.1.0</version>
+    </Yota_RandomOrderNumber>
+  </modules>
+  <global>
+    <helpers>
+      <randomordernumber>
+        <class>Yota_RandomOrderNumber_Helper</class>
+      </randomordernumber>
+    </helpers>
+	<models>
+	  <randomordernumber>
+		<class>Yota_RandomOrderNumber_Model</class>
+		<resourceModel>randomordernumber_mysql4</resourceModel>
+	  </randomordernumber>
+			<eav>
+				<rewrite>
+					<entity_increment_numeric>Yota_RandomOrderNumber_Model_Eav_Entity_Increment_Numeric</entity_increment_numeric>
+				</rewrite>
+			</eav>
+	</models>
+  </global>
+</config> 
